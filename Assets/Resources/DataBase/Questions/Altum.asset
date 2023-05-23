@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Altum
   m_EditorClassIdentifier: 
   objectName: Altum
-  question: "Jaki jest najwy\u017Cszy budynek w Poznaniu?"
-  answer: "Collegium Altum Uniwersytetu Ekonomicznego! Nie ma ju\u017C nawet tyle
-    azbestu w szybach wentylacyjnych!"
+  question: "Dlaczego recykling jest wa\u017Cny?"
+  answer: "Recykling jest wa\u017Cny, poniewa\u017C pomaga w efektywnym wykorzystaniu
+    surowc\xF3w i ogranicza ilo\u015B\u0107 odpad\xF3w."
   img: {fileID: 21300000, guid: c5d5cf073aa462840a9590a5db1bb4eb, type: 3}

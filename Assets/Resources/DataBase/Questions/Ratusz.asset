@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Ratusz
   m_EditorClassIdentifier: 
   objectName: Ratusz
-  question: Ratusz
-  answer: Ratusz
+  question: "Dlaczego powinni\u015Bmy u\u017Cywa\u0107 \u015Brodk\xF3w transportu
+    publicznego lub roweru? "
+  answer: "U\u017Cywanie \u015Brodk\xF3w transportu publicznego lub roweru pomaga
+    zmniejszy\u0107 zanieczyszczenie powietrza i korki uliczne."
   img: {fileID: 21300000, guid: 16eb2f4a8dcd42a47b0951e005b57a7e, type: 3}

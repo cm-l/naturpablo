@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Okraglak
   m_EditorClassIdentifier: 
   objectName: Okraglak
-  question: Okraglak
-  answer: Okraglak
+  question: "Dlaczego nale\u017Cy chroni\u0107 lasy?"
+  answer: "Lasy nale\u017Cy chroni\u0107, poniewa\u017C zapewniaj\u0105 schronienie
+    dla dzikich zwierz\u0105t i dostarczaj\u0105 nam tlen."
   img: {fileID: 21300000, guid: 1c7f8d0fbc6a0474a8a46c8606ad8fb6, type: 3}

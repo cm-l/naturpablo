@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Lazarz
   m_EditorClassIdentifier: 
   objectName: Lazarz
-  question: rynek
-  answer: ryneczek
+  question: Co oznacza termin "ekosystem"?
+  answer: "Ekosystem to wszystkie organizmy \u017Cyj\u0105ce i ich \u015Brodowisko
+    naturalne, kt\xF3re wzajemnie oddzia\u0142uj\u0105."
   img: {fileID: 21300000, guid: c15a3abdeb7cee14ab7308f37cab3c2d, type: 3}

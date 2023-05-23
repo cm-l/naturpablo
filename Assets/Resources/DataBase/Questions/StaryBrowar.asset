@@ -13,6 +13,9 @@ MonoBehaviour:
   m_Name: StaryBrowar
   m_EditorClassIdentifier: 
   objectName: Stary Browar
-  question: Stary Browar
-  answer: browar
+  question: "Dlaczego nale\u017Cy oszcz\u0119dza\u0107 wod\u0119 w naszych codziennych
+    czynno\u015Bciach?"
+  answer: "Nale\u017Cy oszcz\u0119dza\u0107 wod\u0119, aby chroni\u0107 zasoby wodne,
+    dba\u0107 o r\xF3wnowag\u0119 ekosystem\xF3w wodnych i zapewni\u0107 dost\u0119p
+    do wody dla przysz\u0142ych pokole\u0144."
   img: {fileID: 21300000, guid: 00ebbe9a661cba44b8058fba6eec926b, type: 3}

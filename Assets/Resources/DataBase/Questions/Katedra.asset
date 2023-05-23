@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Katedra
   m_EditorClassIdentifier: 
   objectName: Katedra
-  question: Katedra
-  answer: Katedra
+  question: "Dlaczego powinni\u015Bmy oszcz\u0119dza\u0107 energi\u0119 elektryczn\u0105?"
+  answer: "Oszcz\u0119dzanie energii elektrycznej pomaga ograniczy\u0107 emisj\u0119
+    szkodliwych gaz\xF3w do atmosfery i jest korzystne dla \u015Brodowiska."
   img: {fileID: 21300000, guid: eee01c5693bd2ee448255b5124d5e4d9, type: 3}
