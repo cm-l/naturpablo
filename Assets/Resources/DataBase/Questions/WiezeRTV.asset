@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b747b1afa2b45734986eaa9d2e2f4c9b, type: 3}
   m_Name: WiezeRTV
   m_EditorClassIdentifier: 
-  objectName: WiezzeRTV
+  objectName: WiezeRTV
   question: WiezeRTV
   answer: WiezeRTV
-  img: {fileID: 0}
+  img: {fileID: 21300000, guid: 83d439189acb87d4cb4c50f2d7332c01, type: 3}
