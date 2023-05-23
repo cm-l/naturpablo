@@ -59,6 +59,13 @@ public class CameraTransition : MonoBehaviour
                             // Deadzone
                             framingTransposer.m_DeadZoneHeight = 0f;
                             framingTransposer.m_DeadZoneWidth = 0f;
+
+                            //Interaction canvas
+                            //QNA
+                            if (gameObject.GetComponent<TriggerQnACanvas>() != null)
+                            {
+                                gameObject.GetComponent<TriggerQnACanvas>().TriggerClicked();
+                            }
                         }
                     }
                 }
@@ -66,11 +73,14 @@ public class CameraTransition : MonoBehaviour
         }
     }
 
-    private void OnTurnBackCam()
+    public void OnTurnBackCam()
     {
         // Reset the camera distance when the script is disabled
         framingTransposer.m_CameraDistance = defaultDistance;
         framingTransposer.m_DeadZoneHeight = 0.25f;
         framingTransposer.m_DeadZoneWidth = 0.25f;
+
+        //Back to Player
+        virtualCamera.Follow = pabloNav.transform.GetChild(0).transform;
     }
 }

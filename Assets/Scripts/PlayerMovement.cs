@@ -4,16 +4,20 @@ using UnityEngine.AI;
 public class PlayerMovement : MonoBehaviour
 {
     private NavMeshAgent agent;
+    private GameObject QnA;
 
     private void Start()
     {
         // Get the NavMeshAgent component attached to the player GameObject
         agent = transform.parent.GetComponent<NavMeshAgent>();
+
+        //Get QnA panel thingy
+        QnA = GameObject.Find("QnA");
     }
 
     private void Update()
     {
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButton(0) && !QnACanvasBehaviour.isCanvasActivated)
         {
             // Cast a ray from the mouse position into the scene
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
