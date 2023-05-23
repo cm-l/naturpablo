@@ -8,6 +8,7 @@ public class ButtonManager : MonoBehaviour
     public GameObject canvasObject;
     public QnACanvasBehaviour qnACanvasBehaviour;
     public CameraTransition ct;
+    [SerializeField] private AudioClip UIClick;
 
     public void ShowAnswer()
     {
@@ -18,11 +19,14 @@ public class ButtonManager : MonoBehaviour
         QnACanvasBehaviour.speechBubble.enabled = true;
 
         QnACanvasBehaviour.answerTMP.text = QnACanvasBehaviour.GetAnswer();
+
+        SoundSystemSingleton.Instance.PlaySfxSound(UIClick);
     }
 
     public void BackOutOfQnA()
     {
         canvasObject = GameObject.Find("Canvas");
+        SoundSystemSingleton.Instance.PlaySfxSound(UIClick);
 
         if (canvasObject != null)
         {
