@@ -8,12 +8,12 @@ public class PlayerMovement : MonoBehaviour
     private void Start()
     {
         // Get the NavMeshAgent component attached to the player GameObject
-        agent = GetComponent<NavMeshAgent>();
+        agent = transform.parent.GetComponent<NavMeshAgent>();
     }
 
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButton(0))
         {
             // Cast a ray from the mouse position into the scene
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
