@@ -79,12 +79,11 @@ public class Trash : MonoBehaviour
                 segregationManager.AddPoint();
                 canGetPoint = false;
             }
-            else if (other.gameObject.GetComponent<Bin>().type == type && canGetPoint == true)
+            else if (other.gameObject.GetComponent<Bin>().type != type && canGetPoint == true)
             {
                 segregationManager.SubtractPoint();
             }
 
-            Debug.Log(type);
             Destroy(gameObject);
         }
     }

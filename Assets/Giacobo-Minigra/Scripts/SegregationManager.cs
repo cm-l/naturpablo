@@ -25,14 +25,14 @@ public class SegregationManager : MonoBehaviour
 
     public void AddPoint()
     {
-        points++;
+        points += 1;
         Debug.Log(points);
         ChangeScoreDisplay();
     }
 
     public void SubtractPoint()
     {
-        points--;
+        points -= 1;
         Debug.Log(points);
         ChangeScoreDisplay();
     }
