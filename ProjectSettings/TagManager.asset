@@ -8,7 +8,6 @@ TagManager:
   - Bin
   - Landscape
   - SegregationManager
-  - Score
   layers:
   - Default
   - TransparentFX
