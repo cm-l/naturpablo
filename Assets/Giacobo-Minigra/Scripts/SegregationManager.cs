@@ -7,12 +7,14 @@ public class SegregationManager : MonoBehaviour
 {
     public GameObject trash, trashPrefab;
     public GameObject[] bin;
-    public int points = 0;
+    public int points, actions;
     public TextMeshProUGUI score;
+    private Landscape landscape;
 
     void Start()
     {
         ChangeScoreDisplay();
+        landscape = GameObject.FindGameObjectWithTag("Landscape").GetComponent<Landscape>();
     }
 
     void Update()
@@ -25,20 +27,34 @@ public class SegregationManager : MonoBehaviour
 
     public void AddPoint()
     {
+        actions++;
         points += 1;
         Debug.Log(points);
         ChangeScoreDisplay();
+        CheckScore();
+        landscape.Upgrade();
     }
 
     public void SubtractPoint()
     {
-        points -= 1;
+        actions++;
+        points--;
         Debug.Log(points);
         ChangeScoreDisplay();
+        CheckScore();
+        landscape.Downgrade();
     }
 
     void ChangeScoreDisplay()
     {
         score.text = "Score: " + points.ToString();
+    }
+
+    void CheckScore()
+    {
+        if (actions > 2)
+        {
+            score.text = "End!";
+        }
     }
 }

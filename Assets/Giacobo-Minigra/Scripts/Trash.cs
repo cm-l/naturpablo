@@ -11,7 +11,7 @@ public class Trash : MonoBehaviour
     private float mZCoord;
     private bool canGetPoint = true;
     [SerializeField]
-    private Material[] materials;
+    private Material[] paper, plastic, glass, bio;
 
     void Start()
     {
@@ -24,19 +24,19 @@ public class Trash : MonoBehaviour
     {
         if (type == 1)
         {
-            gameObject.GetComponent<Renderer>().material = materials[Random.Range(0, 2)];
+            gameObject.GetComponent<Renderer>().material = paper[Random.Range(0, 2)];
         }
         else if (type == 2)
         {
-            gameObject.GetComponent<Renderer>().material = materials[Random.Range(2, 4)];
+            gameObject.GetComponent<Renderer>().material = plastic[Random.Range(0, 2)];
         }
         else if (type == 3)
         {
-            gameObject.GetComponent<Renderer>().material = materials[Random.Range(4, 6)];
+            gameObject.GetComponent<Renderer>().material = glass[Random.Range(0, 2)];
         }
         else if (type == 4)
         {
-            gameObject.GetComponent<Renderer>().material = materials[Random.Range(6, 8)];
+            gameObject.GetComponent<Renderer>().material = bio[Random.Range(0, 2)];
         }
     }
 
@@ -82,6 +82,7 @@ public class Trash : MonoBehaviour
             else if (other.gameObject.GetComponent<Bin>().type != type && canGetPoint == true)
             {
                 segregationManager.SubtractPoint();
+                canGetPoint = false;
             }
 
             Destroy(gameObject);

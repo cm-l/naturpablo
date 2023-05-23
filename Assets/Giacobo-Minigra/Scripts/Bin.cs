@@ -4,15 +4,5 @@ using UnityEngine;
 
 public class Bin : MonoBehaviour
 {
-    public byte type;
-
-    void Start()
-    {
-        
-    }
-
-    void Update()
-    {
-        
-    }
+    public int type;
 }

@@ -4,15 +4,28 @@ using UnityEngine;
 
 public class Landscape : MonoBehaviour
 {
-    // Start is called before the first frame update
+    [SerializeField]
+    private Material[] materials;
+    private int i;
+
     void Start()
     {
-        
+        gameObject.GetComponent<Renderer>().material = materials[i];
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Downgrade()
     {
-        
+        if (i < 2)
+        {
+            gameObject.GetComponent<Renderer>().material = materials[++i];
+        }
+    }
+
+    public void Upgrade()
+    {
+        if (i > 0)
+        {
+            gameObject.GetComponent<Renderer>().material = materials[--i];
+        }
     }
 }
