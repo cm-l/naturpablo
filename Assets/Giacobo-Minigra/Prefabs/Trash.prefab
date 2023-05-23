@@ -116,17 +116,20 @@ MonoBehaviour:
   type: 1
   segregationManager: {fileID: 0}
   paper:
-  - {fileID: 2100000, guid: d92224bda62c12143baf0d6ad4f97a6b, type: 2}
-  - {fileID: 2100000, guid: d92224bda62c12143baf0d6ad4f97a6b, type: 2}
+  - {fileID: 2100000, guid: 97c324358764f174b8618ea6b715ae64, type: 2}
+  - {fileID: 2100000, guid: 6a9254d2da70f7648a91bd0a5b7943cc, type: 2}
+  - {fileID: 2100000, guid: bb497da780f8f32429fd2bc21a06381d, type: 2}
   plastic:
-  - {fileID: 2100000, guid: ca6be7e351ebe14419cdf449dca0ad2d, type: 2}
-  - {fileID: 2100000, guid: ca6be7e351ebe14419cdf449dca0ad2d, type: 2}
+  - {fileID: 2100000, guid: ee5352143767c754f8022594ed730612, type: 2}
+  - {fileID: 2100000, guid: b6e90c2018d6da84bb5bc1382729a6b6, type: 2}
+  - {fileID: 2100000, guid: 607cb2a780c04c142aa3ba064bd8f7b5, type: 2}
+  - {fileID: 2100000, guid: 52129e51c954b14489a13596065be7d5, type: 2}
+  - {fileID: 2100000, guid: fcc26b03282cd8449b9eba02137cccd9, type: 2}
   glass:
-  - {fileID: 2100000, guid: 5ed609fd9b8d3e44f88bd5f7f29bbf96, type: 2}
-  - {fileID: 2100000, guid: 5ed609fd9b8d3e44f88bd5f7f29bbf96, type: 2}
+  - {fileID: 2100000, guid: c86bd2fe86982ad4683ed9692835333a, type: 2}
   bio:
-  - {fileID: 2100000, guid: 525baa5206a6a9d4ea69d77f252c93f5, type: 2}
-  - {fileID: 2100000, guid: 525baa5206a6a9d4ea69d77f252c93f5, type: 2}
+  - {fileID: 2100000, guid: 40e080624cee2054bad8ce1ef169d6ef, type: 2}
+  - {fileID: 2100000, guid: 977679002048b984bbe1323a6c74ec89, type: 2}
 --- !u!54 &595056392948387029
 Rigidbody:
   m_ObjectHideFlags: 0

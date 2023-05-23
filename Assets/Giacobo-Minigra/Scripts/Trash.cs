@@ -25,19 +25,19 @@ public class Trash : MonoBehaviour
     {
         if (type == 1)
         {
-            gameObject.GetComponent<Renderer>().material = paper[Random.Range(0, 2)];
+            gameObject.GetComponent<Renderer>().material = paper[Random.Range(0, paper.Length)];
         }
         else if (type == 2)
         {
-            gameObject.GetComponent<Renderer>().material = plastic[Random.Range(0, 2)];
+            gameObject.GetComponent<Renderer>().material = plastic[Random.Range(0, plastic.Length)];
         }
         else if (type == 3)
         {
-            gameObject.GetComponent<Renderer>().material = glass[Random.Range(0, 2)];
+            gameObject.GetComponent<Renderer>().material = glass[Random.Range(0, glass.Length)];
         }
         else
         {
-            gameObject.GetComponent<Renderer>().material = bio[Random.Range(0, 2)];
+            gameObject.GetComponent<Renderer>().material = bio[Random.Range(0, bio.Length)];
         }
     }
 
