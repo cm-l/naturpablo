@@ -28,8 +28,8 @@ public class SegregationManager : MonoBehaviour
     public void AddPoint()
     {
         actions++;
-        points += 1;
-        Debug.Log(points);
+        points++;
+        //Debug.Log(points);
         ChangeScoreDisplay();
         CheckScore();
         landscape.Upgrade();
@@ -39,7 +39,7 @@ public class SegregationManager : MonoBehaviour
     {
         actions++;
         points--;
-        Debug.Log(points);
+        //Debug.Log(points);
         ChangeScoreDisplay();
         CheckScore();
         landscape.Downgrade();

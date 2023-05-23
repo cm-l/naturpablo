@@ -15,9 +15,10 @@ public class Trash : MonoBehaviour
 
     void Start()
     {
-        segregationManager = GameObject.FindGameObjectWithTag("SegregationManager").GetComponent<SegregationManager>();
+        segregationManager = GameObject.FindGameObjectWithTag("SegregationManager").GetComponent<SegregationManager>(); 
         type = Random.Range(1, 5);
         ChangeMaterial();
+        Debug.Log(type);
     }
 
     private void ChangeMaterial()
@@ -34,7 +35,7 @@ public class Trash : MonoBehaviour
         {
             gameObject.GetComponent<Renderer>().material = glass[Random.Range(0, 2)];
         }
-        else if (type == 4)
+        else
         {
             gameObject.GetComponent<Renderer>().material = bio[Random.Range(0, 2)];
         }
@@ -81,6 +82,7 @@ public class Trash : MonoBehaviour
             }
             else if (other.gameObject.GetComponent<Bin>().type != type && canGetPoint == true)
             {
+                Debug.Log(other.gameObject.GetComponent<Bin>().type + "!=" + type);
                 segregationManager.SubtractPoint();
                 canGetPoint = false;
             }
