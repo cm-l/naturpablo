@@ -20,12 +20,4 @@ public class Landscape : MonoBehaviour
             gameObject.GetComponent<Renderer>().material = materials[++i];
         }
     }
-
-    public void Upgrade()
-    {
-        if (i > 0)
-        {
-            gameObject.GetComponent<Renderer>().material = materials[--i];
-        }
-    }
 }

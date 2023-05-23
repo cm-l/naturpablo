@@ -21,7 +21,7 @@ public class SegregationManager : MonoBehaviour
     {
         if (trash == null)
         {
-            trash = Instantiate(trashPrefab, new Vector3(0, 1.5f, -5.75f), transform.rotation * Quaternion.Euler(90f, 180f, 0f));
+            trash = Instantiate(trashPrefab, new Vector3(Random.Range(-2f, 2f), 2f, -5.75f), transform.rotation * Quaternion.Euler(90f, 180f, 0f));
         }
     }
 
@@ -32,7 +32,6 @@ public class SegregationManager : MonoBehaviour
         //Debug.Log(points);
         ChangeScoreDisplay();
         CheckScore();
-        landscape.Upgrade();
     }
 
     public void SubtractPoint()

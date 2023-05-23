@@ -12,6 +12,7 @@ public class Trash : MonoBehaviour
     private bool canGetPoint = true;
     [SerializeField]
     private Material[] paper, plastic, glass, bio;
+    private SphereCollider coll;
 
     void Start()
     {
@@ -19,6 +20,8 @@ public class Trash : MonoBehaviour
         type = Random.Range(1, 5);
         ChangeMaterial();
         Debug.Log(type);
+        coll = gameObject.AddComponent<SphereCollider>();
+        coll.isTrigger = true;
     }
 
     private void ChangeMaterial()
