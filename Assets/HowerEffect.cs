@@ -5,6 +5,7 @@ public class HowerEffect : MonoBehaviour
     public Outline outline;
     public float hoverWidth = 8f;
     public float normalWidth = 0f;
+    public float interactionRange;
 
     public GameObject pabloNav;
 
@@ -18,7 +19,7 @@ public class HowerEffect : MonoBehaviour
     private void Update()
     {
         //Check if item is in range
-        if (Vector3.Distance(transform.position, pabloNav.transform.position) < 4f)
+        if (Vector3.Distance(transform.position, pabloNav.transform.position) < interactionRange)
         {
             // Cast a ray from the mouse position
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
