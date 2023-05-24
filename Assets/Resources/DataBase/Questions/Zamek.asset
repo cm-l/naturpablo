@@ -13,6 +13,9 @@ MonoBehaviour:
   m_Name: Zamek
   m_EditorClassIdentifier: 
   objectName: Zamek
-  question: Zamek
-  answer: Zamek
+  question: "Jakie s\u0105 skutki wyrzucania \u015Bmieci na ulic\u0119 i do park\xF3w?"
+  answer: "Wyrzucanie \u015Bmieci na ulic\u0119 i do park\xF3w ma negatywne skutki,
+    takie jak estetyczne zanieczyszczenie otoczenia, zagro\u017Cenie dla zdrowia
+    ludzi i zwierz\u0105t, zanieczyszczanie gleby i w\xF3d, oraz pogorszenie jako\u015Bci
+    \u017Cycia spo\u0142eczno\u015Bci lokalnych."
   img: {fileID: 21300000, guid: b9ea6e1ea148625428003a27aff076d9, type: 3}
