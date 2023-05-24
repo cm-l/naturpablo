@@ -66,6 +66,12 @@ public class CameraTransition : MonoBehaviour
                             {
                                 gameObject.GetComponent<TriggerQnACanvas>().TriggerClicked();
                             }
+
+                            // Minigra Jakuba
+                            if (hit.transform.name == "Casing")
+                            {
+                                virtualCamera.Follow = hit.transform.GetChild(0);
+                            }
                         }
                     }
                 }

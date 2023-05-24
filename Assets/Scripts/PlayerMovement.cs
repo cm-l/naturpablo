@@ -6,6 +6,8 @@ public class PlayerMovement : MonoBehaviour
     private NavMeshAgent agent;
     private GameObject QnA;
 
+    public AudioClip musicThing;
+
     private void Start()
     {
         // Get the NavMeshAgent component attached to the player GameObject
@@ -13,6 +15,8 @@ public class PlayerMovement : MonoBehaviour
 
         //Get QnA panel thingy
         QnA = GameObject.Find("QnA");
+
+        SoundSystemSingleton.Instance.PlayMusicSound(musicThing);
     }
 
     private void Update()
